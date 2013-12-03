@@ -105,7 +105,7 @@ def main():
         )
         for run in range(0, runs):
             f.write(
-                "%u\t%f\t%f\t%f\t%f\t%i" % (
+                "%u\t%f\t%f\t%f\t%f\t%i\n" % (
                     run, arrivalRate, mu, simulationTime,
                     returnTimes[run], returnToZeros[run]
                 )
