@@ -68,7 +68,7 @@ def GetData(arrivalRate, serviceRate, simulationTime):
 def main():
 
     mu = 1.0
-    runs = 1e3
+    runs = int(1e3)
     simulationTime = 1e6
     lambda0 = 0.1
     lambda1 = 10.0
