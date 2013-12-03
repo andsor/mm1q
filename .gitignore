@@ -16,3 +16,4 @@
 cmm1q/build
 .kdev*
 *.kdev*
+*.swp
