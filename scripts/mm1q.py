@@ -10,12 +10,12 @@ window.
 
 """
 Run simulation with
-  runs == 10^3 at each value of lambda
+  runs == 10^4 at each value of lambda
   T == 10^6 simulation time: this ensures that the standard deviation of lambda
                              around its mean is approximately 10^{-3}
   lambda_0 = 0.1
-  lambda_1 = 10.0
-Use geometric increments for lambda and employ 1,001 tasks to get at a
+  lambda_1 = 100.0
+Use geometric increments for lambda and employ 10,001 tasks to get at a
 resolution of 10^{-2} * lambda.
 """
 
@@ -68,14 +68,14 @@ def GetData(arrivalRate, serviceRate, simulationTime):
 def main():
 
     mu = 1.0
-    runs = int(1e3)
+    runs = int(1e4)
     simulationTime = 1e6
     lambda0 = 0.1
-    lambda1 = 10.0
+    lambda1 = 100.0
 
     task_id = int(os.getenv('SGE_TASK_ID')) - 1
     filename = (
-        '/scratch02/sorge/mm1q/%i.dat' % (task_id + 1)
+        '/scratch02/sorge/mm1q/%i.dat' % task_id
     )
 
     # create directory
