@@ -110,3 +110,9 @@ def main():
                     returnTimes[run], returnToZeros[run]
                 )
             )
+
+
+if __name__ == '__main__':
+    import sys
+
+    sys.exit(main())
