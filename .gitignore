@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+
+
+cmm1q/build
+.kdev*
+*.kdev*
